@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Média</title>
+
+    <style>
+        * {
+            padding: 5px;
+            margin: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+        }
+        body {
+            background-color: black;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform:translate(-50%, -50%)
+        }
+
+        tr>th, td{
+            border: 1.5px solid white;
+        }
+        thead>tr>th {
+            background-color: rgb(24, 19, 108);
+        }
+        .th {
+            background-color: rgb(124, 80, 25);
+        }
+        .num {
+            text-align: center;
+        }
+        .media {
+            text-align: left;
+            background-color: rgb(24, 71, 55);
+        }
+        th, .media{
+            text-shadow: 2px 2px 3px black;
+        }
+        caption {
+            width: 500px;
+            background-color: rgb(86, 85, 85);
+            padding: 5px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border: 1.5px solid aliceblue;
+            border-bottom: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>TABELA DE MÉDIA</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4" class="th">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.3</td>
+                <td class="num">2.6</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>3.6</td>
+                <td>4.3</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>3.6</td>
+                <td>1.3</td>
+                <td class="num">2.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>1.6</td>
+                <td>9.3</td>
+                <td class="num">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media">Média de Exatas</th>
+                <td class="num media">10.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="th">Humanas</th>
+                <td>História</td>
+                <td>0.6</td>
+                <td>3.5</td>
+                <td class="num">2.9</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>5.3</td>
+                <td>4.0</td>
+                <td class="num">1.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="media m">Média de Humanas</th>
+                <td class="num media">10.0</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+
+</html>
